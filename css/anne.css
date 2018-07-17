@@ -40,14 +40,13 @@ blockquote {
     font-family: 'Amatic SC', cursive;
     font-size: 2em;
     text-align: center;
-  }
-  
+}
 
 /*---------------------Header---------------*/
 
 .hero {
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     background-image: url(../images/anne_small_2x.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,4 +130,13 @@ blockquote {
     margin: 5px;
     display: block;
     padding: 0;
+}
+
+/*-----------------About--------------*/
+
+.about__box {
+    padding: 2em;
+    max-width: 50em;
+    margin: 5% auto;
+    text-align: justify;
 }
