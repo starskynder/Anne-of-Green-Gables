@@ -1,0 +1,36 @@
+/*--------------General Styles--------------*/
+* {
+    box-sizing: border-box;
+}
+
+img {
+max-width: 100%;
+}
+
+body {
+    background-color: #424b32;
+    color: #fff;
+    font-family: 'Gaegu', cursive;
+    font-size: 1.2em;
+    position: relative;
+}
+
+p,
+blockquote {
+  font-size: 1.3em;
+}
+
+.link {
+  color: #FCC09E;
+  display: inline-block;
+  margin: 5px;
+}
+
+.link:visited {
+  color: #F5D20A;
+}
+
+.link:focus,
+.link:hover {
+  text-decoration: none;
+}
