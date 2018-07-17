@@ -140,3 +140,49 @@ blockquote {
     margin: 5% auto;
     text-align: justify;
 }
+
+/*---------------Blog----------------*/
+
+.blog {
+    color: #000;
+    background-image: url(../images/greengables_small_2x.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5%;
+}
+
+.blog__heading {
+    background-color: rgba(255, 255, 255, 0.6);
+    max-width: 50%;
+    margin: 1.5em auto;
+    border-radius: 10px;
+  }
+
+.blog__box {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: space-around;
+    margin: auto;
+}
+
+.box__text {
+    padding: 1em;
+    background-color: #fff;
+    color: #000;
+    border-radius: 10px;
+    margin: 10px;
+    font-size: 1.3em;
+    background-image: url(notebook-dark.png);
+}
+
+.blog__date {
+    display: block;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    padding: 5px;
+}
+
+.blog__author {
+    display: block;
+}
