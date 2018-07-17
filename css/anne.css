@@ -157,7 +157,7 @@ blockquote {
     max-width: 50%;
     margin: 1.5em auto;
     border-radius: 10px;
-  }
+}
 
 .blog__box {
     display: flex;
@@ -173,7 +173,7 @@ blockquote {
     border-radius: 10px;
     margin: 10px;
     font-size: 1.3em;
-    background-image: url(notebook-dark.png);
+    background-image: url(../images/notebook-dark.png);
 }
 
 .blog__date {
@@ -185,4 +185,90 @@ blockquote {
 
 .blog__author {
     display: block;
+}
+
+/*----------------Quotes--------------*/
+
+.my-thoughts {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    position: relative;
+    padding: 1em;
+}
+
+.my-thoughts:after {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background-color: #FCC09E;
+    border-radius: 10px;
+}
+
+.my-thoughts-border {
+    position: relative;
+}
+
+.my-thoughts-border:before {
+    content: "";
+    width: 8px;
+    height: 100%;
+    background-color: #FCC09E;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+}
+
+.my-thoughts-outer {
+    border-top: 10px solid #FCC09E;
+    width: 270px;
+    margin-left: -4px;
+    padding: 5%;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.my-thoughts-outer:nth-of-type(odd):before,
+.my-thoughts-outer:nth-of-type(even):before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #FCC09E;
+    transform: translateY(-110%);
+    right: -20px;
+    position: absolute;
+}
+
+.my-thoughts-outer:last-of-type {
+    margin-bottom: 4em;
+}
+
+.my-thoughts__txt {
+    margin: 10px;
+    background-color: #fff;
+    background-image: url(../images/notebook-dark.png);
+    border-radius: 10px;
+    color: #000;
+    padding: 15px;
+    box-shadow: 0 0 13px rgb(40, 46, 31);
+}
+
+.my-thoughts__txt:before,
+.my-thoughts__txt:after {
+    content: "";
+    width: 10px;
+    height: 50px;
+    background-image: url(../images/notebook-dark.png);
+    border: 1px solid rgb(66, 75, 50);
+    border-radius: 10px;
+    background-color: #fff;
+    position: absolute;
+    left: 10%;
+    top: -10px;
+}
+
+.my-thoughts__txt:after {
+    left: 85%;
 }
