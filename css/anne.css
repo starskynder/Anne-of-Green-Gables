@@ -36,6 +36,13 @@ blockquote {
     text-decoration: none;
 }
 
+.secondary-heading {
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+    text-align: center;
+  }
+  
+
 /*---------------------Header---------------*/
 
 .hero {
