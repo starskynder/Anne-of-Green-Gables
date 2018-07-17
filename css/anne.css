@@ -315,3 +315,12 @@ blockquote {
     color: #000;
     font-weight: bold;
 }
+
+/*-------------Credits--------------*/
+
+.credits {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 1em;
+}
