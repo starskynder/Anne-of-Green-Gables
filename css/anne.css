@@ -272,3 +272,46 @@ blockquote {
 .my-thoughts__txt:after {
     left: 85%;
 }
+
+/*---------------Books--------------*/
+
+.books {
+    background-image: url(../images/books_small_2x.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10% 5%;
+}
+
+.books__box {
+    text-align: center;
+    margin: auto;
+    background-image: url(../images/notebook-dark.png);
+}
+
+.books__list {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.books__link {
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(66, 75, 50);
+}
+
+.books__link:focus,
+.books__link:hover {
+    color: #FCC09E;
+    background-color: rgb(66, 75, 50);
+}
+
+.books__list_item {
+    margin: 10px;
+}
+
+.books__heading {
+    color: #000;
+    font-weight: bold;
+}
