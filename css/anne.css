@@ -365,6 +365,12 @@ blockquote {
     .books {
         border-radius: 20%;
     }
+    .books {
+        background-image: url(../images/books_medium_2x.jpg);
+    }
+    .blog {
+        background-image: url(../images/greengables_medium_2x.jpg);
+    }
     .blog__box {
         margin: 5%;
     }
@@ -397,6 +403,7 @@ blockquote {
     }
     .books {
         padding: 10% 5%;
+        background-image: url(../images/books_large_2x.jpg);
     }
     .books__box,
     .blog__box {
