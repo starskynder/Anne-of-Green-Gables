@@ -161,28 +161,28 @@ nav {
     display: none;
 }
 
-.nav__menu--variant
-  {
-background-color: #fff;
-color: #000;
+.nav__menu--variant {
+    background-color: #fff;
+    color: #000;
 }
+
 .nav__hamburger--variant {
     background-color: #000;
-border-radius: 10px;
+    border-radius: 10px;
 }
 
 .nav__hamburger--variant:first-of-type {
-   
     transform: rotate(50deg) translate(6px, 5px);
-   
 }
+
 .nav__hamburger--variant:nth-of-type(2) {
     display: none;
 }
 
 .nav__hamburger--variant:nth-of-type(3) {
-    transform: rotate(-50deg) ;
+    transform: rotate(-50deg);
 }
+
 /*-----------------About--------------*/
 
 .about__box {
@@ -411,6 +411,9 @@ border-radius: 10px;
         }
         .blog__box {
             margin: 5%;
+        }
+        .blog__heading {
+            max-width: 20%;
         }
         .my-thoughts:after {
             width: 60%;
