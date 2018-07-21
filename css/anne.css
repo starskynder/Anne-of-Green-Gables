@@ -1,468 +1,488 @@
-/*--------------General Styles--------------*/
+/* --------------General Styles-------------- */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 body {
-    background-color: #424b32;
-    color: #fff;
-    font-family: 'Gaegu', cursive;
-    font-size: 1.2em;
-    position: relative;
+  background-color: #424b32;
+  color: #fff;
+  font-family: "Gaegu", cursive;
+  font-size: 1.2em;
+  position: relative;
 }
 
 p,
 blockquote {
-    font-size: 1.3em;
+  font-size: 1.3em;
 }
 
 .link {
-    color: #FCC09E;
-    display: inline-block;
-    margin: 5px;
+  color: #fcc09e;
+  display: inline-block;
+  margin: 5px;
 }
 
 .link:visited {
-    color: #F5D20A;
+  color: #f5d20a;
 }
 
 .link:focus,
 .link:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .secondary-heading {
-    font-family: 'Amatic SC', cursive;
-    font-size: 2em;
-    text-align: center;
+  font-family: "Amatic SC", cursive;
+  font-size: 2em;
+  text-align: center;
 }
 
-/*---------------------Header---------------*/
+/* ---------------------Header--------------- */
 
 .hero {
-    width: 100%;
-    height: 100vh;
-    background-image: url(../images/anne_small_2x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
-    margin: 0;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../images/anne_small_2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
+  margin: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
 .hero__txt {
-    background-color: rgba(85, 107, 47, 0.6);
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5em;
-    text-align: center;
-    margin-top: 0.5em;
-    max-width: 50%;
+  background-color: rgba(85, 107, 47, 0.6);
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  text-align: center;
+  margin-top: 0.5em;
+  max-width: 50%;
 }
 
 .hero__txt::before {
-    content: "SIMPLY ANNE";
-    font-family: 'Amatic SC', cursive;
-    font-size: 1.5em;
-    display: block;
-    text-align: center;
+  content: "SIMPLY ANNE";
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em;
+  display: block;
+  text-align: center;
 }
 
 .hero__txt--hidden {
-    display: none;
+  display: none;
 }
 
 nav {
-    display: flex;
-    flex-flow: column wrap;
-    transition: all 0.4s ease-in-out;
+  display: flex;
+  flex-flow: column wrap;
+  transition: all 0.4s ease-in-out;
 }
 
 .nav {
-    list-style-type: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: flex-start;
-    padding: 0;
-    background-color: transparent;
-    margin: 0;
-    font-family: 'Amatic SC', cursive;
-    transition: all 0.4s ease-in-out;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  padding: 0;
+  background-color: transparent;
+  margin: 0;
+  font-family: "Amatic SC", cursive;
+  transition: all 0.4s ease-in-out;
 }
 
 .js-nav {
-    background-color: rgb(85, 107, 47, 0.6);
-    color: #fff;
-    padding: 0.5em;
-    display: flex;
-    flex-flow: column wrap;
-    width: 100%;
+  background-color: rgb(85, 107, 47, 0.6);
+  color: #fff;
+  padding: 0.5em;
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
 }
 
 .nav__item {
-    color: #fff;
-    font-family: 'Amatic SC', cursive;
-    font-size: 1.5em;
-    padding: 10px;
-    display: none;
+  color: #fff;
+  font-family: "Amatic SC", cursive;
+  font-size: 1.5em;
+  padding: 10px;
+  display: none;
 }
 
 .nav__link {
-    text-decoration: none;
-    transition: all 0.4s linear;
-    color: #fff;
+  text-decoration: none;
+  transition: all 0.4s linear;
+  color: #fff;
 }
 
 .nav__link:focus,
 .nav__link:hover {
-    border-bottom: 1px solid #fff;
+  border-bottom: 1px solid #fff;
 }
 
 .nav__menu {
-    display: flex;
-    color: #fff;
-    background-color: rgba(85, 107, 47, 0.6);
-    width: auto;
-    padding: 0.5em;
-    margin-top: 0.5em;
-    margin-left: 0.5em;
+  display: flex;
+  color: #fff;
+  background-color: rgba(85, 107, 47, 0.6);
+  width: auto;
+  padding: 0.5em;
+  margin-top: 0.5em;
+  margin-left: 0.5em;
 }
 
 .nav__hamburger {
-    content: "";
-    width: 25px;
-    height: 3px;
-    background-color: #fff;
-    margin: 5px;
-    display: block;
-    padding: 0;
-    transition: all 0.4s ease-in-out;
+  content: "";
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px;
+  display: block;
+  padding: 0;
+  transition: all 0.4s ease-in-out;
 }
 
 .nav__item--hidden {
-    display: flex;
+  display: flex;
 }
 
 .nav--flex {
-    flex-flow: column wrap;
+  flex-flow: column wrap;
 }
 
 .js--hidden {
-    display: none;
+  display: none;
 }
 
 .nav__menu--variant {
-    background-color: #fff;
-    color: #000;
+  background-color: #fff;
+  color: #000;
 }
 
 .nav__hamburger--variant {
-    background-color: #000;
-    border-radius: 10px;
+  background-color: #000;
+  border-radius: 10px;
 }
 
 .nav__hamburger--variant:first-of-type {
-    transform: rotate(50deg) translate(6px, 5px);
+  transform: rotate(50deg) translate(6px, 5px);
 }
 
 .nav__hamburger--variant:nth-of-type(2) {
-    display: none;
+  display: none;
 }
 
 .nav__hamburger--variant:nth-of-type(3) {
-    transform: rotate(-50deg);
+  transform: rotate(-50deg);
 }
 
-/*-----------------About--------------*/
+/* -----------------About-------------- */
 
 .about__box {
-    padding: 2em;
-    max-width: 50em;
-    margin: 5% auto;
-    text-align: justify;
+  padding: 2em;
+  max-width: 50em;
+  margin: 5% auto;
+  text-align: justify;
 }
 
-/*---------------Blog----------------*/
+/* ---------------Blog---------------- */
 
 .blog {
-    color: #000;
-    background-image: url(../images/greengables_small_2x.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    padding: 5%;
+  color: #000;
+  background-image: url(../images/greengables_small_2x.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 5%;
 }
 
 .blog__heading {
-    background-color: rgba(255, 255, 255, 0.6);
-    max-width: 50%;
-    margin: 1.5em auto;
-    border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.6);
+  max-width: 50%;
+  margin: 1.5em auto;
+  border-radius: 10px;
 }
 
 .blog__box {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: space-around;
-    margin: auto;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: space-around;
+  margin: auto;
 }
 
 .box__text {
-    padding: 1em;
-    background-color: #fff;
-    color: #000;
-    border-radius: 10px;
-    margin: 10px;
-    font-size: 1.3em;
-    background-image: url(../images/notebook-dark.png);
+  padding: 1em;
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 1.3em;
+  background-image: url(../images/notebook-dark.png);
 }
 
 .blog__date {
-    display: block;
-    font-family: 'Amatic SC', cursive;
-    font-weight: bold;
-    padding: 5px;
+  display: block;
+  font-family: "Amatic SC", cursive;
+  font-weight: bold;
+  padding: 5px;
 }
 
 .blog__author {
-    display: block;
+  display: block;
 }
 
-/*----------------Quotes--------------*/
+/* ----------------Quotes-------------- */
 
 .my-thoughts {
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    position: relative;
-    padding: 1em;
-    margin: 5%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  position: relative;
+  padding: 1em;
+  margin: 5%;
 }
 
-.my-thoughts:after {
-    content: "";
-    width: 100%;
-    height: 10px;
-    background-color: #FCC09E;
-    border-radius: 10px;
+.my-thoughts::after {
+  content: "";
+  width: 100%;
+  height: 10px;
+  background-color: #fcc09e;
+  border-radius: 10px;
 }
 
 .my-thoughts-border {
-    position: relative;
+  position: relative;
 }
 
-.my-thoughts-border:before {
-    content: "";
-    width: 8px;
-    height: 100%;
-    background-color: #FCC09E;
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: -5px;
+.my-thoughts-border::before {
+  content: "";
+  width: 8px;
+  height: 100%;
+  background-color: #fcc09e;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -5px;
 }
 
 .my-thoughts-outer {
-    border-top: 10px solid #FCC09E;
-    width: 270px;
-    margin-left: -4px;
-    padding: 5%;
-    margin-bottom: 40px;
-    position: relative;
+  border-top: 10px solid #fcc09e;
+  width: 270px;
+  margin-left: -4px;
+  padding: 5%;
+  margin-bottom: 40px;
+  position: relative;
 }
 
-.my-thoughts-outer:nth-of-type(odd):before,
-.my-thoughts-outer:nth-of-type(even):before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #FCC09E;
-    transform: translateY(-110%);
-    right: -20px;
-    position: absolute;
+.my-thoughts-outer:nth-of-type(odd)::before,
+.my-thoughts-outer:nth-of-type(even)::before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fcc09e;
+  transform: translateY(-110%);
+  right: -20px;
+  position: absolute;
 }
 
 .my-thoughts-outer:last-of-type {
-    margin-bottom: 4em;
+  margin-bottom: 4em;
 }
 
 .my-thoughts__txt {
-    margin: 10px;
-    background-color: #fff;
-    background-image: url(../images/notebook-dark.png);
-    border-radius: 10px;
-    color: #000;
-    padding: 15px;
-    box-shadow: 0 0 13px rgb(40, 46, 31);
+  margin: 10px;
+  background-color: #fff;
+  background-image: url(../images/notebook-dark.png);
+  border-radius: 10px;
+  color: #000;
+  padding: 15px;
+  box-shadow: 0 0 13px rgb(40, 46, 31);
 }
 
-.my-thoughts__txt:before,
-.my-thoughts__txt:after {
-    content: "";
-    width: 10px;
-    height: 50px;
-    background-image: url(../images/notebook-dark.png);
-    border: 1px solid rgb(66, 75, 50);
-    border-radius: 10px;
-    background-color: #fff;
-    position: absolute;
-    left: 10%;
-    top: -10px;
+.my-thoughts__txt::before,
+.my-thoughts__txt::after {
+  content: "";
+  width: 10px;
+  height: 50px;
+  background-image: url(../images/notebook-dark.png);
+  border: 1px solid rgb(66, 75, 50);
+  border-radius: 10px;
+  background-color: #fff;
+  position: absolute;
+  left: 10%;
+  top: -10px;
 }
 
-.my-thoughts__txt:after {
-    left: 85%;
+.my-thoughts__txt::after {
+  left: 85%;
 }
 
-/*---------------Books--------------*/
+/* ---------------Books-------------- */
 
 .books {
-    background-image: url(../images/books_small_2x.jpg);
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding: 10% 5%;
+  background-image: url(../images/books_small_2x.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 10% 5%;
 }
 
 .books__box {
-    text-align: center;
-    margin: auto;
-    background-image: url(../images/notebook-dark.png);
+  text-align: center;
+  margin: auto;
+  background-image: url(../images/notebook-dark.png);
 }
 
 .books__list {
-    list-style-type: none;
-    text-align: center;
-    padding: 0;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
 }
 
 .books__link {
-    padding: 10px;
-    text-decoration: none;
-    color: rgb(66, 75, 50);
+  padding: 10px;
+  text-decoration: none;
+  color: rgb(66, 75, 50);
 }
 
 .books__link:focus,
 .books__link:hover {
-    color: #FCC09E;
-    background-color: rgb(66, 75, 50);
+  color: #fcc09e;
+  background-color: rgb(66, 75, 50);
 }
 
 .books__list_item {
-    margin: 10px;
+  margin: 10px;
 }
 
 .books__heading {
-    color: #000;
-    font-weight: bold;
+  color: #000;
+  font-weight: bold;
 }
 
-/*-------------Credits--------------*/
+/* -------------Credits-------------- */
 
 .credits {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    padding: 1em;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  padding: 1em;
 }
 
-/*----------------Media Queries-------------------*/
+/* ----------------Media Queries------------------- */
 
 @media (min-width: 700px) {
+  .hero {
+    background-image: url(../images/anne_medium_2x.jpg);
+  }
+
+  .hero__txt {
+    position: absolute;
+    top: 50%;
+    left: 0.5em;
+    transform: translateY(-50%);
+    max-width: 40%;
+  }
+
+  @media (min-width: 820px) {
     .hero {
-        background-image: url(../images/anne_medium_2x.jpg);
-        /* flex-flow: column wrap; */
+      border-radius: 0 0 20% 20%;
     }
-    .hero__txt {
-        position: absolute;
-        top: 50%;
-        left: 0.5em;
-        transform: translateY(-50%);
-        max-width: 40%;
+
+    .hero__txt--hidden {
+      display: flex;
+      align-self: center;
     }
-    @media (min-width: 820px) {
-        .hero {
-            border-radius: 0 0 20% 20%;
-        }
-        .hero__txt--hidden {
-            display: flex;
-            align-self: center;
-        }
-        .blog,
-        .books {
-            border-radius: 20%;
-        }
-        .books {
-            background-image: url(../images/books_medium_2x.jpg);
-        }
-        .blog {
-            background-image: url(../images/greengables_medium_2x.jpg);
-        }
-        .blog__box {
-            margin: 5%;
-        }
-        .blog__heading {
-            max-width: 20%;
-        }
-        .my-thoughts:after {
-            width: 60%;
-            height: 10px;
-        }
-        .my-thoughts-border {
-            transform: translate(50%);
-        }
-        .my-thoughts-outer {
-            width: 400px;
-        }
-        .my-thoughts-outer:nth-of-type(odd):before,
-        .my-thoughts-outer:nth-of-type(even):before {
-            width: 40px;
-            height: 40px;
-        }
-        .my-thoughts-outer:nth-of-type(odd) {
-            transform: translate(-100%);
-        }
-        .my-thoughts-outer:nth-of-type(odd):before {
-            left: -20px;
-        }
+
+    .blog,
+    .books {
+      border-radius: 20%;
     }
-    @media (min-width: 1000px) {
-        .hero {
-            background-image: url(../images/anne_large_2x.jpg);
-            justify-content: flex-end;
-        }
-        .blog {
-            background-image: url(../images/greengables_large_2x.jpg);
-        }
-        .books {
-            padding: 10% 5%;
-            background-image: url(../images/books_large_2x.jpg);
-        }
-        .books__box,
-        .blog__box {
-            max-width: 60%;
-            margin: auto;
-        }
-        .nav {
-            padding-right: 1em;
-        }
-        .nav__item {
-            display: flex;
-            font-size: 2em;
-        }
-        .nav__menu {
-            display: none;
-        }
+
+    .books {
+      background-image: url(../images/books_medium_2x.jpg);
     }
+
+    .blog {
+      background-image: url(../images/greengables_medium_2x.jpg);
+    }
+
+    .blog__box {
+      margin: 5%;
+    }
+
+    .blog__heading {
+      max-width: 20%;
+    }
+
+    .my-thoughts::after {
+      width: 60%;
+      height: 10px;
+    }
+
+    .my-thoughts-border {
+      transform: translate(50%);
+    }
+
+    .my-thoughts-outer {
+      width: 400px;
+    }
+
+    .my-thoughts-outer:nth-of-type(odd)::before,
+    .my-thoughts-outer:nth-of-type(even)::before {
+      width: 40px;
+      height: 40px;
+    }
+
+    .my-thoughts-outer:nth-of-type(odd) {
+      transform: translate(-100%);
+    }
+
+    .my-thoughts-outer:nth-of-type(odd)::before {
+      left: -20px;
+    }
+  }
+
+  @media (min-width: 1000px) {
+    .hero {
+      background-image: url(../images/anne_large_2x.jpg);
+      justify-content: flex-end;
+    }
+
+    .blog {
+      background-image: url(../images/greengables_large_2x.jpg);
+    }
+
+    .books {
+      padding: 10% 5%;
+      background-image: url(../images/books_large_2x.jpg);
+    }
+
+    .books__box,
+    .blog__box {
+      max-width: 60%;
+      margin: auto;
+    }
+
+    .nav {
+      padding-right: 1em;
+    }
+
+    .nav__item {
+      display: flex;
+      font-size: 2em;
+    }
+
+    .nav__menu {
+      display: none;
+    }
+  }
 }
